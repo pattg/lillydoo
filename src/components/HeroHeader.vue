@@ -6,7 +6,7 @@
         <div class="col-sm-5">
           <h1>Entdecke unsere Hautfreundlichkeit</h1>
           <div class="button-wrapper">
-            <a href="#" class="button">Jetzt Deine Größe wählen</a>
+            <a href="#trialPackage" class="button">Jetzt Deine Größe wählen</a>
           </div>
         </div>
       </div>

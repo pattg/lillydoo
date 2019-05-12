@@ -1,5 +1,5 @@
 <template>
-  <section class="container-fluid">
+  <section class="container-fluid" id="trialPackage">
     <div class="row">
       <div class="col-sm-6 text-center">
         <img src="../assets/img/lillydoo-testpaket-10.jpg">
