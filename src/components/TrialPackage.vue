@@ -2,7 +2,9 @@
   <section class="container-fluid" id="trialPackage">
     <div class="row">
       <div class="col-sm-6 text-center">
-        <img src="../assets/img/lillydoo-testpaket-10.jpg">
+        <div v-for="(product, index) in products.slice(0,1)" :key="index">
+          <img :src="products[selectedProduct].src" :alt="product.name">
+        </div>
       </div>
       <div class="col-sm-6">
         <form>
@@ -10,25 +12,15 @@
           <div class="btns-container">
             <p>Wähle Deine Größe</p>
             <ul class="btns">
-              <li class="btn" @click="activeBtn = 'btn1'" :class="{active : activeBtn == 'btn1'}">
-                <p>1</p>
-                <span>(2-3 KG)</span>
-              </li>
-              <li class="btn" @click="activeBtn = 'btn2'" :class="{active : activeBtn == 'btn2'}">
-                <p>2</p>
-                <span>(3-4 KG)</span>
-              </li>
-              <li class="btn" @click="activeBtn = 'btn3'" :class="{active : activeBtn == 'btn3'}">
-                <p>3</p>
-                <span>(4-7 KG)</span>
-              </li>
-              <li class="btn" @click="activeBtn = 'btn4'" :class="{active : activeBtn == 'btn4'}">
-                <p>4</p>
-                <span>(7-10 KG)</span>
-              </li>
-              <li class="btn" @click="activeBtn = 'btn5'" :class="{active : activeBtn == 'btn5'}">
-                <p>5</p>
-                <span>(10-12 KG)</span>
+              <li
+                v-for="(product, index) in products"
+                :key="index"
+                :class="{active: activeBtn == index }"
+                @click="selectSet(index)"
+                class="btn"
+              >
+                <p>{{index+1}}</p>
+                <span>({{product.weight}})</span>
               </li>
             </ul>
           </div>
@@ -54,8 +46,24 @@
 <script>
 export default {
   name: "TrialPackage",
+  props: {
+    products: {
+      type: Array
+    }
+  },
+
   data() {
-    return { activeBtn: "btn1" };
+    return {
+      selectedProduct: 0,
+      activeBtn: 0
+    };
+  },
+
+  methods: {
+    selectSet: function(index) {
+      this.selectedProduct = index;
+      this.activeBtn = index;
+    }
   }
 };
 </script>

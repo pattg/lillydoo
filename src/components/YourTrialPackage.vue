@@ -12,21 +12,21 @@
         </div>
         <div class="trial-text">
           <ul>
-            <h4>10 Lillidoo Windeln</h4>
+            <h4>10 Lillydoo Windeln</h4>
             <li>0 % Parfüme & Lotionen, 100 % LILLYDOO Schutz</li>
             <li>Extra weich und mit idealer Passform</li>
           </ul>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6">
+      <div class="col-xs-12 col-sm-6" v-for="(product, index) in products.slice(0,1)" :key="index">
         <div class="trial-image">
-          <img src="../assets/img/water-wipes-15-small.jpg">
+          <img :src="products[selectedProduct].yourTrialPackageSrc" :alt="product.name">
         </div>
         <div class="trial-text">
           <ul>
-            <h4>15 Feuchttücher mit 99 % Wasser</h4>
-            <li>0 % Parfüme & PEGs, 100 % biologisch abbaubar</li>
-            <li>Natürlich rein, extra mild, Alternative zu "Wasser & Watte"</li>
+            <h4>{{products[selectedProduct].headline}}</h4>
+            <li>{{products[selectedProduct].bp1}}</li>
+            <li>{{products[selectedProduct].bp2}}</li>
           </ul>
         </div>
       </div>
@@ -36,7 +36,17 @@
 
 <script>
 export default {
-  name: "YourTrialPackage"
+  name: "YourTrialPackage",
+  data() {
+    return {
+      selectedProduct: 4
+    };
+  },
+  props: {
+    products: {
+      type: Array
+    }
+  }
 };
 </script>
 
