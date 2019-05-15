@@ -1,18 +1,9 @@
-// To Do
-// declare Variables selectedProduct and activeBtn in App.vue in Data Object
-// Pass as Props to TrialPackage and Your Trial Package (How)?
-// emit Event from Trial Package onClick with index
-// listen to Emit Event in App.vue
-// write computed method to set selectedProduct and activeButton to index
-
-
-
 <template>
   <div>
     <HeroHeader></HeroHeader>
-    <TrialPackage :products="products" @handleClick="onHandleClick()"></TrialPackage>
+    <TrialPackage :products="products" @selectSet="onSelectSet"></TrialPackage>
     <HowItWorks></HowItWorks>
-    <YourTrialPackage :products="products"></YourTrialPackage>
+    <YourTrialPackage :products="products" :selectedProduct="index"></YourTrialPackage>
   </div>
 </template>
 
@@ -74,7 +65,8 @@ export default {
           bp2: "Extra dickes und komposierbares Tuch",
           yourTrialPackageSrc: require("./assets/img/sensitive-wipes-15-small.jpg")
         }
-      ]
+      ],
+      index: 0
     };
   },
   components: {
@@ -82,6 +74,11 @@ export default {
     TrialPackage,
     HowItWorks,
     YourTrialPackage
+  },
+  methods: {
+    onSelectSet(index) {
+      this.index = index;
+    }
   }
 };
 </script>

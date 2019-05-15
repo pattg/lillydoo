@@ -18,9 +18,12 @@
           </ul>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6" v-for="(product, index) in products.slice(0,1)" :key="index">
+      <div class="col-xs-12 col-sm-6">
         <div class="trial-image">
-          <img :src="products[selectedProduct].yourTrialPackageSrc" :alt="product.name">
+          <img
+            :src="products[selectedProduct].yourTrialPackageSrc"
+            :alt="products[selectedProduct].name"
+          >
         </div>
         <div class="trial-text">
           <ul>
@@ -37,15 +40,11 @@
 <script>
 export default {
   name: "YourTrialPackage",
-  data() {
-    return {
-      selectedProduct: 4
-    };
-  },
   props: {
     products: {
       type: Array
-    }
+    },
+    selectedProduct: Number
   }
 };
 </script>

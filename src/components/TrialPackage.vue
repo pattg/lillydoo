@@ -2,8 +2,8 @@
   <section class="container-fluid" id="trialPackage">
     <div class="row">
       <div class="col-sm-6 text-center">
-        <div v-for="(product, index) in products.slice(0,1)" :key="index">
-          <img :src="products[selectedProduct].src" :alt="product.name">
+        <div>
+          <img :src="products[selectedProduct].src" :alt="products[selectedProduct].name">
         </div>
       </div>
       <div class="col-sm-6">
@@ -15,7 +15,7 @@
               <li
                 v-for="(product, index) in products"
                 :key="index"
-                :class="{active: activeBtn == index }"
+                :class="{active: selectedProduct == index }"
                 @click="selectSet(index)"
                 class="btn"
               >
@@ -62,7 +62,7 @@ export default {
   methods: {
     selectSet: function(index) {
       this.selectedProduct = index;
-      this.activeBtn = index;
+      this.$emit("selectSet", index);
     }
   }
 };
