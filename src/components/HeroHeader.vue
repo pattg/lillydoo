@@ -1,9 +1,9 @@
 <template>
   <section>
-    <div class="hero-header">
+    <div class="hero-header alignment">
       <img src="../assets/img/oekotex_de.png" class="oekotex-logo">
       <div class="row text-center">
-        <div class="col-sm-5">
+        <div class="small-12 medium-6 columns">
           <h1>Entdecke unsere Hautfreundlichkeit</h1>
           <div class="button-wrapper">
             <a href="#trialPackage" class="button">Jetzt Deine Größe wählen</a>
@@ -21,6 +21,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.row {
+  margin: 0 auto;
+  max-width: 80rem;
+  width: 100%;
+}
+
 .hero-header {
   background: (url("../assets/img/lillydoo-testpaket-header-large.jpg"))
     no-repeat center center/cover;
@@ -30,6 +36,18 @@ export default {
   max-height: 500px;
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.oekotex-logo {
+  position: absolute;
+  top: 14%;
+  right: 3%;
+  width: 12%;
+}
+
+.alignment {
+  position: relative;
 }
 
 .row {

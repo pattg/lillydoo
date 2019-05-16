@@ -1,12 +1,13 @@
 <template>
-  <section class="container-fluid" id="trialPackage">
+  <section id="trialPackage">
     <div class="row">
-      <div class="col-sm-6 text-center">
-        <div>
+      <div class="small-12 medium-6 columns">
+        <div class="oekotex-wrapper">
+          <img src="../assets/img/oekotex_de.png" alt="oekotex-Logo" class="oekotex-logo">
           <img :src="products[selectedProduct].src" :alt="products[selectedProduct].name">
         </div>
       </div>
-      <div class="col-sm-6">
+      <div class="small-12 medium-5 columns">
         <form>
           <h2>Unser gratis Testpaket</h2>
           <div class="btns-container">
@@ -26,7 +27,9 @@
           </div>
           <p>Teste jetzt unsere Windeln und Feuchttücher - In Größe 1 - 3 enthält unser Testpaket unsere Feuchttücher mit 99 % Wasser, ab Gr. 4 erhältst Du unsere Sensitiven Feuchttücher. Wir zahlen die Produkte, Du nur den Versand.</p>
           <ul class="product-info">
-            <li>Automatischer Übergang ins jederzeit kündbare Windel-Abo für 49,50 € pro Lieferung.</li>
+            <li
+              class="primary-color"
+            >Automatischer Übergang ins jederzeit kündbare Windel-Abo für 49,50 € pro Lieferung.</li>
             <li>
               Preise inkl. MwSt., ggf. zzgl.
               <a href="#">Versankosten</a>
@@ -69,15 +72,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../_settings.scss";
+@import "~foundation-sites/scss/foundation.scss";
+@include foundation-everything;
+
 .row {
-  margin: 0 auto;
-  max-width: 80rem;
-  width: 100%;
   padding: 2rem 0 2rem 0;
 }
 
-.text-center {
-  text-align: center !important;
+.primary-color {
+  color: $primary-color;
 }
 
 .text-center img {
@@ -92,6 +96,14 @@ export default {
 .btns-container {
   margin-bottom: 30px;
 }
+
+.btns li {
+  text-align: center;
+  width: 30%;
+  padding: 7px 5px 2px 5px;
+  margin-right: 10px;
+}
+
 .btns-container li:hover {
   background-color: #00afab;
   border-color: #00afab;
@@ -115,6 +127,7 @@ export default {
   list-style: none;
   justify-content: space-between;
   padding: 0;
+  margin: 0;
 }
 
 .btns ul {
@@ -170,5 +183,20 @@ export default {
 .product-info {
   padding: 0;
   margin-left: 1.1rem;
+}
+
+.oekotex-wrapper {
+  position: relative;
+}
+
+.oekotex-logo {
+  position: absolute;
+}
+
+.oekotex-wrapper .oekotex-logo {
+  top: 10%;
+  left: 9%;
+  z-index: 10;
+  width: 27%;
 }
 </style>

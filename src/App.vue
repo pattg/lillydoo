@@ -22,7 +22,7 @@ export default {
           src: require("./assets/img/lillydoo-testpaket-10.jpg"),
           weight: "2-3 KG",
           headline: "15 Feuchtücher mit 99% Wasser",
-          bp1: "0% Parfüme & PEGs, 100% biologisch abbaubar!!!!!!!",
+          bp1: "0% Parfüme & PEGs, 100% biologisch abbaubar",
           bp2: "Natürlich rein, extra mild, Alternative zu Wasser und Watte",
           yourTrialPackageSrc: require("./assets/img/water-wipes-15-small.jpg")
         },
@@ -83,8 +83,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-div {
-  @import "./scss/styles.scss";
-}
+<style lang="scss">
+@import "_settings.scss";
+@import "~foundation-sites/scss/foundation.scss";
+@include foundation-everything;
 </style>

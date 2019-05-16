@@ -1,12 +1,12 @@
 <template>
-  <section class="container-fluid dark">
+  <section class="dark">
     <div class="row">
-      <div class="col-xs-12 text-center">
+      <div class="small-12 columns text-center">
         <h2>Wie es funktioniert</h2>
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-12 col-sm-4 text-center">
+      <div class="small-12 medium-4 columns text-center">
         <img src="../assets/img/lillydoo-your-trialbox-icon.svg">
         <h4>Dein Testpaket</h4>
         <p>
@@ -14,7 +14,7 @@
           <br>Du übernimmst nur das Porto.
         </p>
       </div>
-      <div class="col-xs-12 col-sm-4 text-center">
+      <div class="small-12 medium-4 columns text-center">
         <img src="../assets/img/lillydoo-your-flexibility-icon.svg">
         <h4>Deine Flexibilität</h4>
         <p>
@@ -25,7 +25,7 @@
           <a href="####">Erfahre hier mehr über das LILLYDOO Windel-Abo</a>
         </p>
       </div>
-      <div class="col-xs-12 col-sm-4 text-center">
+      <div class="small-12 medium-4 columns text-center">
         <img src="../assets/img/lillydoo-your-subscription-icon.svg">
         <h4>Deine Monatsbox</h4>
         <p>

@@ -1,16 +1,16 @@
 <template>
-  <section class="container-fluid bright">
+  <section>
     <div class="row">
-      <div class="col-xs-12 text-center">
+      <div class="medium-12 text-center columns margin-top-20">
         <h2>Dein Testpaket enthält</h2>
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-12 col-sm-6">
-        <div class="trial-image">
+      <div class="small-12 medium-6 margin-bottom-20 columns">
+        <div class="trial-image small-3 trial-contains-img text-center">
           <img src="../assets/img/lillydoo-little-blowballs-design-preview-tp.jpg">
         </div>
-        <div class="trial-text">
+        <div class="small-8 trial-info">
           <ul>
             <h4>10 Lillydoo Windeln</h4>
             <li>0 % Parfüme & Lotionen, 100 % LILLYDOO Schutz</li>
@@ -18,14 +18,14 @@
           </ul>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6">
-        <div class="trial-image">
+      <div class="small-12 medium-6 margin-bottom-20 columns">
+        <div class="trial-image small-3 text-center">
           <img
             :src="products[selectedProduct].yourTrialPackageSrc"
             :alt="products[selectedProduct].name"
           >
         </div>
-        <div class="trial-text">
+        <div class="trial-text small-8">
           <ul>
             <h4>{{products[selectedProduct].headline}}</h4>
             <li>{{products[selectedProduct].bp1}}</li>
@@ -82,9 +82,12 @@ h2 {
 .trial-image {
   float: left;
 }
+.trial-text {
+  float: left;
+}
 
-.trial-text li {
-  list-style: none;
+.ul {
+  margin-left: 1.1rem;
 }
 </style>
 
