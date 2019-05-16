@@ -57,8 +57,7 @@ export default {
 
   data() {
     return {
-      selectedProduct: 0,
-      activeBtn: 0
+      selectedProduct: 0
     };
   },
 
