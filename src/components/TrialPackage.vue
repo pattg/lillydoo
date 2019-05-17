@@ -172,6 +172,7 @@ export default {
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
   transition-delay: 0s;
+  width: 100%;
 }
 
 .btn-send:hover {
@@ -197,5 +198,27 @@ export default {
   left: 9%;
   z-index: 10;
   width: 27%;
+}
+
+@media only screen and (max-width: 834px) {
+  .btns-container ul {
+    justify-content: initial;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 140px;
+  }
+}
+
+@media only screen and (max-width: 834px) {
+  .btns-container ul li {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 834px) {
+  .small-12 {
+    width: 100%;
+    height: 100%;
+  }
 }
 </style>

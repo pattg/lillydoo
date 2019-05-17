@@ -1,9 +1,9 @@
 <template>
   <section>
-    <div class="hero-header alignment">
+    <div class="hero-header mobile-full-vh alignment">
       <img src="../assets/img/oekotex_de.png" class="oekotex-logo">
       <div class="row text-center">
-        <div class="small-12 medium-6 columns">
+        <div class="small-12 medium-6 end columns">
           <h1>Entdecke unsere Hautfreundlichkeit</h1>
           <div class="button-wrapper">
             <a href="#trialPackage" class="button">Jetzt Deine Größe wählen</a>
@@ -99,6 +99,7 @@ button {
   color: #fff;
   transition: 0.3s;
   text-transform: uppercase;
+  width: 80%;
 }
 
 .button:hover {
@@ -108,8 +109,79 @@ button {
 
 .oekotex-logo {
   position: absolute;
-  top: 10%;
-  right: 3%;
-  width: 12%;
+  top: 56%;
+  right: 0%;
+  width: 25%;
+}
+
+/*MEDIA QUERYS*/
+
+@media only screen and (max-width: 834px) {
+  .hero-header {
+    background: (url("../assets/img/lillydoo-testpaket-header-medium.jpg"))
+      no-repeat center center/cover;
+    display: block;
+    width: auto;
+    height: 81vw;
+    max-height: 550px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .hero-header {
+    background: (url("../assets/img/lillydoo-testpaket-header-small.jpg"))
+      no-repeat center center/cover;
+    display: block;
+    width: auto;
+    height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 834px) {
+  .hero-header .mobile-full-vh {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 600px) {
+  .hero-header .oekotex-logo {
+    top: 49%;
+    right: 12%;
+    width: 18%;
+  }
+}
+@media (min-width: 900px) {
+  .hero-header .oekotex-logo {
+    top: 14%;
+    right: 3%;
+    width: 12%;
+  }
+}
+
+@media only screen and (max-width: 834px) {
+  .hero-header .row {
+    height: 70%;
+  }
+}
+
+@media only screen and (max-width: 834px) {
+  .hero-header .row > .columns {
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 834px) {
+  .small-12 {
+    width: 100%;
+  }
 }
 </style>

@@ -10,7 +10,7 @@
         <div class="trial-image small-3 trial-contains-img text-center">
           <img src="../assets/img/lillydoo-little-blowballs-design-preview-tp.jpg">
         </div>
-        <div class="small-8 trial-info">
+        <div class="small-8 trial-text">
           <ul>
             <h4>10 Lillydoo Windeln</h4>
             <li>0 % Parfüme & Lotionen, 100 % LILLYDOO Schutz</li>
@@ -88,6 +88,12 @@ h2 {
 
 .ul {
   margin-left: 1.1rem;
+}
+
+@media only screen and (max-width: 834px) {
+  .small-12 {
+    width: 100%;
+  }
 }
 </style>
 

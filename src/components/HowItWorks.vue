@@ -71,4 +71,10 @@ h2 {
   line-height: 1.1;
   margin-bottom: 10px;
 }
+
+@media only screen and (max-width: 834px) {
+  .small-12 {
+    width: 100%;
+  }
+}
 </style>
