@@ -24,7 +24,8 @@ export default {
           headline: "15 Feuchtücher mit 99% Wasser",
           bp1: "0% Parfüme & PEGs, 100% biologisch abbaubar",
           bp2: "Natürlich rein, extra mild, Alternative zu Wasser und Watte",
-          yourTrialPackageSrc: require("./assets/img/water-wipes-15-small.jpg")
+          yourTrialPackageSrc: require("./assets/img/water-wipes-15-small.jpg"),
+          yourTrialPackageAltName: "15 Feuchtücher mit 99% Wasser"
         },
 
         {
@@ -34,7 +35,8 @@ export default {
           headline: "15 Feuchtücher mit 99% Wasser",
           bp1: "0% Parfüme & PEGs, 100% biologisch abbaubar",
           p2: "Natürlich rein, extra mild, Alternative zu Wasser und Watte",
-          yourTrialPackageSrc: require("./assets/img/water-wipes-15-small.jpg")
+          yourTrialPackageSrc: require("./assets/img/water-wipes-15-small.jpg"),
+          yourTrialPackageAltName: "15 Feuchtücher mit 99% Wasser"
         },
 
         {
@@ -44,7 +46,8 @@ export default {
           headline: "15 Feuchtücher mit 99% Wasser",
           bp1: "0% Parfüme & PEGs, 100% biologisch abbaubar",
           bp2: "Natürlich rein, extra mild, Alternative zu Wasser und Watte",
-          yourTrialPackageSrc: require("./assets/img/water-wipes-15-small.jpg")
+          yourTrialPackageSrc: require("./assets/img/water-wipes-15-small.jpg"),
+          yourTrialPackageAltName: "15 Feuchtücher mit 99% Wasser"
         },
         {
           name: "lillydoo-testpaket-40",
@@ -53,7 +56,8 @@ export default {
           headline: "15 sensitive Feuchttücher",
           bp1: "0% Parfüme & PEGs, 100% biologisch abbaubar",
           bp2: "Extra dickes und komposierbares Tuch",
-          yourTrialPackageSrc: require("./assets/img/sensitive-wipes-15-small.jpg")
+          yourTrialPackageSrc: require("./assets/img/sensitive-wipes-15-small.jpg"),
+          yourTrialPackageAltName: "15 sensitive Feuchttücher"
         },
 
         {
@@ -63,7 +67,8 @@ export default {
           headline: "15 sensitive Feuchttücher",
           bp1: "0% Parfüme & PEGs, 100% biologisch abbaubar",
           bp2: "Extra dickes und komposierbares Tuch",
-          yourTrialPackageSrc: require("./assets/img/sensitive-wipes-15-small.jpg")
+          yourTrialPackageSrc: require("./assets/img/sensitive-wipes-15-small.jpg"),
+          yourTrialPackageAltName: "15 sensitive Feuchttücher"
         }
       ],
       index: 0
@@ -84,7 +89,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import "_settings.scss";
 @import "~foundation-sites/scss/foundation.scss";
 @include foundation-everything;
 </style>
