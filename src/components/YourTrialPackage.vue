@@ -22,7 +22,7 @@
         <div class="trial-image small-3 text-center">
           <img
             :src="products[selectedProduct].yourTrialPackageSrc"
-            :alt="products[selectedProduct].name"
+            :alt="products[selectedProduct].yourTrialPackageAltName"
           >
         </div>
         <div class="trial-text small-8">
