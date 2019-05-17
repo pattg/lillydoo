@@ -21,12 +21,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.row {
-  margin: 0 auto;
-  max-width: 80rem;
-  width: 100%;
-}
-
+@import "../scss/styles.scss";
 .hero-header {
   background: (url("../assets/img/lillydoo-testpaket-header-large.jpg"))
     no-repeat center center/cover;
@@ -54,10 +49,6 @@ export default {
   margin: 0 auto;
   max-width: 80rem;
   width: 100%;
-}
-
-.text-center {
-  text-align: center;
 }
 
 h1 {

@@ -51,20 +51,9 @@ export default {
 
 <style lang="scss" scoped>
 @import "../scss/styles.scss";
-section.bright {
-  background: #fff;
-  flex-direction: column;
-}
-
-.text-center {
-  text-align: center !important;
-}
 
 .row {
-  margin: 0 auto;
   max-width: 80rem;
-  width: 100%;
-  padding: 2rem 0 2rem 0;
 }
 
 p {
@@ -89,6 +78,8 @@ h2 {
 .ul {
   margin-left: 1.1rem;
 }
+
+/*MEDIA QUERYS*/
 
 @media only screen and (max-width: 834px) {
   .small-12 {

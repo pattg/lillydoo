@@ -1,6 +1,6 @@
 <template>
   <section class="dark">
-    <div class="row">
+    <div class="row dark">
       <div class="small-12 columns text-center">
         <h2>Wie es funktioniert</h2>
       </div>
@@ -44,19 +44,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-section.dark {
-  background: #f8f8f8;
-  flex-direction: column;
-}
-
-.text-center {
-  text-align: center !important;
-}
+@import "../scss/styles.scss";
 
 .row {
-  margin: 0 auto;
-  max-width: 80rem;
-  width: 100%;
   padding: 2rem 0 2rem 0;
 }
 
@@ -71,6 +61,7 @@ h2 {
   line-height: 1.1;
   margin-bottom: 10px;
 }
+/*MEDIA QUERYS*/
 
 @media only screen and (max-width: 834px) {
   .small-12 {

@@ -71,17 +71,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../_settings.scss";
-@import "~foundation-sites/scss/foundation.scss";
-@include foundation-everything;
-
-.row {
-  padding: 2rem 0 2rem 0;
-}
-
-.primary-color {
-  color: $primary-color;
-}
+@import "../scss/styles.scss";
 
 .text-center img {
   width: 80%;
@@ -199,6 +189,8 @@ export default {
   z-index: 10;
   width: 27%;
 }
+
+/*MEDIA QUERYS*/
 
 @media only screen and (max-width: 834px) {
   .btns-container ul {
