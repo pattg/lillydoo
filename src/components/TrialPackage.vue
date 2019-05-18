@@ -36,7 +36,7 @@
             </li>
           </ul>
           <div class="trial-box-btn">
-            <button class="btn-send">
+            <button class="btn-send" @click="addToCart">
               <span>IN DEN WARENKORB LEGEN</span>
             </button>
           </div>
@@ -65,6 +65,9 @@ export default {
     selectSet: function(index) {
       this.selectedProduct = index;
       this.$emit("selectSet", index);
+    },
+    addToCart: function() {
+      alert("Habt einen schönen Tag ;)");
     }
   }
 };
@@ -153,8 +156,8 @@ export default {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  padding: 1.6rem 3.2rem 1.7rem 3.2rem;
-  font-size: 1.6rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
   background-color: #00afab;
   border-color: #99dfdd;
   color: #fff;
