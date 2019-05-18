@@ -90,7 +90,6 @@ button {
   color: #fff;
   transition: 0.3s;
   text-transform: uppercase;
-  width: 80%;
 }
 
 .button:hover {
@@ -141,6 +140,13 @@ button {
     width: 18%;
   }
 }
+
+@media (max-width: 600px) {
+  .hero-header .button {
+    width: 80%;
+  }
+}
+
 @media (min-width: 900px) {
   .hero-header .oekotex-logo {
     top: 14%;
