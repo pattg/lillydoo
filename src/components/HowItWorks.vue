@@ -22,7 +22,7 @@
           <br>Oder noch vor der ersten Lieferung kündigen.
         </p>
         <p>
-          <a href="####">Erfahre hier mehr über das LILLYDOO Windel-Abo</a>
+          <a class="primary-color" href="####">Erfahre hier mehr über das LILLYDOO Windel-Abo</a>
         </p>
       </div>
       <div class="small-12 medium-4 columns text-center">

@@ -32,7 +32,7 @@
             >Automatischer Übergang ins jederzeit kündbare Windel-Abo für 49,50 € pro Lieferung.</li>
             <li>
               Preise inkl. MwSt., ggf. zzgl.
-              <a href="#">Versankosten</a>
+              <a class="primary-color" href="#">Versankosten</a>
             </li>
           </ul>
           <div class="trial-box-btn">
@@ -67,7 +67,7 @@ export default {
       this.$emit("selectSet", index);
     },
     addToCart: function() {
-      alert("Habt einen schönen Tag ;)");
+      alert("Liebe Grüße und viel Spaß noch ;)");
     }
   }
 };
@@ -94,6 +94,7 @@ export default {
   width: 30%;
   padding: 7px 5px 2px 5px;
   margin-right: 10px;
+  text-align: center;
 }
 
 .btns-container li:hover {
@@ -124,10 +125,6 @@ export default {
 
 .btns ul {
   padding: 0;
-}
-
-.btns li {
-  text-align: center;
 }
 
 .btn {

@@ -68,6 +68,12 @@ h2 {
   margin-bottom: 10px;
 }
 
+h4 {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
 .trial-image {
   float: left;
 }
@@ -77,6 +83,11 @@ h2 {
 
 .ul {
   margin-left: 1.1rem;
+  padding-left: 0;
+}
+
+ul li {
+  list-style-position: inside;
 }
 
 /*MEDIA QUERYS*/

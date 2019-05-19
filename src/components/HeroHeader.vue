@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="hero-header mobile-full-vh alignment">
+    <div class="hero-header mobile-full-vh">
       <img src="../assets/img/oekotex_de.png" class="oekotex-logo">
       <div class="row text-center">
         <div class="small-12 medium-6 end columns">
@@ -34,21 +34,15 @@ export default {
   position: relative;
 }
 
+.row {
+  max-width: 80rem;
+  width: 100%;
+}
 .oekotex-logo {
   position: absolute;
   top: 14%;
   right: 3%;
   width: 12%;
-}
-
-.alignment {
-  position: relative;
-}
-
-.row {
-  margin: 0 auto;
-  max-width: 80rem;
-  width: 100%;
 }
 
 h1 {
@@ -76,7 +70,7 @@ button {
   border-width: 0;
   cursor: pointer;
   font-family: Helvetica, Arial, sans-serif;
-  font-weight: 100;
+  font-size: 1.2rem;
   line-height: normal;
   margin: 0 0 1rem;
   position: relative;
